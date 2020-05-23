@@ -22,12 +22,26 @@ class linked_list:
 
         print (count)
 
+    def getcount(self,node):
+        
+        if not node:
+            return 0
+        else:
+            return 1 + self.getcount(node.next)
+
+    def lengthh(self):
+        return self.getcount(self.head)
+        
+
+    def demo(self):
+        print ("hello")
+
 
 l = linked_list()
-l.push(3)
-l.push(2)
 l.push(1)
+l.push(2)
+l.push(3)
 l.push(0)
-l.length()
+print(l.lengthh())
 
         

@@ -33,10 +33,6 @@ class linked_list:
         return self.getcount(self.head)
         
 
-    def demo(self):
-        print ("hello")
-
-
 l = linked_list()
 l.push(1)
 l.push(2)
